@@ -1,0 +1,39 @@
+@use "_reset.scss";
+@use "_mixin.scss" as mixin;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+html,
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: mixin.$color-black;
+}
+a {
+  color: mixin.$color-black;
+  text-decoration: none;
+  padding-bottom: 0px;
+  &:hover {
+    border-bottom: 2px solid mixin.$color-black;
+  }
+}
+a.btn,
+button.btn {
+  display: inline-block;
+  background: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(104, 178, 244);
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background-color: aliceblue;
+  }
+  &.active {
+    background-color: rgb(104, 178, 244);
+  }
+}
